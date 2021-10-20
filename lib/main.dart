@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled3/HomeScreen.dart';
 import 'package:untitled3/LoginScreen.dart';
 import 'package:untitled3/RegistrationScreen.dart';
 
@@ -11,11 +12,11 @@ class MyApplication extends StatelessWidget{
     return MaterialApp(
       title:'Calculator',
       routes:{
+        HomeScreen.routeName:(buildContext)=>HomeScreen(),
         LoginScreen.routeName:(buildContext)=>LoginScreen(),
         RegistrationScreen.routeName:(buildContext)=>RegistrationScreen(),
-
       },
-      initialRoute:LoginScreen.routeName ,
+      initialRoute:HomeScreen.routeName ,
     );
   }
 }
