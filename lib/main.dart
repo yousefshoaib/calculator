@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled3/LoginScreen.dart';
+import 'package:untitled3/RegistrationScreen.dart';
 
 void main(){
   runApp(MyApplication());
@@ -10,7 +11,9 @@ class MyApplication extends StatelessWidget{
     return MaterialApp(
       title:'Calculator',
       routes:{
-        LoginScreen.routeName:(buildContext)=>LoginScreen()
+        LoginScreen.routeName:(buildContext)=>LoginScreen(),
+        RegistrationScreen.routeName:(buildContext)=>RegistrationScreen(),
+
       },
       initialRoute:LoginScreen.routeName ,
     );
